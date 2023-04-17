@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/jsnjack/oohttp/internal/ascii"
 )
 
 // A Cookie represents an HTTP cookie as sent in the Set-Cookie header of an

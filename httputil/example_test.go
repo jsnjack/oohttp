@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"net/http"
 	"net/url"
 	"strings"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
-	"github.com/ooni/oohttp/httputil"
+	"github.com/jsnjack/oohttp/httptest"
+	"github.com/jsnjack/oohttp/httputil"
 )
 
 func ExampleDumpRequest() {

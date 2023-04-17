@@ -9,10 +9,9 @@ import (
 	"errors"
 	"io"
 	"net"
+	"net/http"
 	"net/textproto"
 	"sync"
-
-	"github.com/ooni/oohttp"
 )
 
 var (

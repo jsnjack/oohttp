@@ -8,11 +8,10 @@ import (
 	"bytes"
 	"errors"
 	"io"
+	"net/http"
 	"strings"
 	"testing"
 	"time"
-
-	"github.com/ooni/oohttp"
 )
 
 var sizeTests = []struct {

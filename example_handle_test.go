@@ -7,9 +7,8 @@ package http_test
 import (
 	"fmt"
 	"log"
+	"net/http"
 	"sync"
-
-	"github.com/ooni/oohttp"
 )
 
 type countHandler struct {

@@ -11,7 +11,7 @@ import (
 	"sync"
 	"testing"
 
-	http "github.com/ooni/oohttp"
+	http "github.com/jsnjack/oohttp"
 )
 
 type newServerFunc func(http.Handler) *Server

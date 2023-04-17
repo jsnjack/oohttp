@@ -35,12 +35,12 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
-	"github.com/ooni/oohttp/httptrace"
-	"github.com/ooni/oohttp/httputil"
-	"github.com/ooni/oohttp/internal"
-	"github.com/ooni/oohttp/internal/testcert"
+	. "github.com/jsnjack/oohttp"
+	"github.com/jsnjack/oohttp/httptest"
+	"github.com/jsnjack/oohttp/httptrace"
+	"github.com/jsnjack/oohttp/httputil"
+	"github.com/jsnjack/oohttp/internal"
+	"github.com/jsnjack/oohttp/internal/testcert"
 )
 
 type dummyAddr string
@@ -6361,7 +6361,7 @@ func TestTimeoutHandlerSuperfluousLogs(t *testing.T) {
 			// Now ensure that the regexes match exactly.
 			//      "http: superfluous response.WriteHeader call from <fn>.func\d.\d (<curFile>:lastSpuriousLine-[1, 3]"
 			for _, logEntry := range logEntries {
-				pat := `^http: superfluous response.WriteHeader call from github.com/ooni/oohttp.relevantCaller \(server.go:`
+				pat := `^http: superfluous response.WriteHeader call from github.com/jsnjack/oohttp.relevantCaller \(server.go:`
 				re := regexp.MustCompile(pat)
 				if !re.MatchString(logEntry) {
 					t.Errorf("Log entry mismatch\n\t%s\ndoes not match\n\t%s", logEntry, pat)

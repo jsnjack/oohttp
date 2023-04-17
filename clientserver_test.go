@@ -30,10 +30,10 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
-	"github.com/ooni/oohttp/httptrace"
-	"github.com/ooni/oohttp/httputil"
+	. "github.com/jsnjack/oohttp"
+	"github.com/jsnjack/oohttp/httptest"
+	"github.com/jsnjack/oohttp/httptrace"
+	"github.com/jsnjack/oohttp/httputil"
 )
 
 type clientServerTest struct {
@@ -1492,9 +1492,9 @@ func testWriteHeaderAfterWrite(t *testing.T, h2, hijack bool) {
 		return
 	}
 	gotLog := strings.TrimSpace(errorLog.String())
-	wantLog := "http: superfluous response.WriteHeader call from github.com/ooni/oohttp.relevantCaller (server.go:"
+	wantLog := "http: superfluous response.WriteHeader call from github.com/jsnjack/oohttp.relevantCaller (server.go:"
 	if hijack {
-		wantLog = "http: response.WriteHeader on hijacked connection from github.com/ooni/oohttp.relevantCaller (server.go:"
+		wantLog = "http: response.WriteHeader on hijacked connection from github.com/jsnjack/oohttp.relevantCaller (server.go:"
 	}
 	if !strings.HasPrefix(gotLog, wantLog) {
 		t.Errorf("stderr output = %q; want %q", gotLog, wantLog)

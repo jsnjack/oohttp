@@ -20,6 +20,7 @@ import (
 	"io"
 	"log"
 	"net"
+	"net/http"
 	"net/textproto"
 	"os"
 	"os/exec"
@@ -29,7 +30,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ooni/oohttp"
 	"golang.org/x/net/http/httpguts"
 )
 

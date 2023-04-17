@@ -28,8 +28,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ooni/oohttp/httptrace"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/jsnjack/oohttp/httptrace"
+	"github.com/jsnjack/oohttp/internal/ascii"
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/net/http/httpproxy"
 )
@@ -281,7 +281,7 @@ type Transport struct {
 	// upgrades, set this to true.
 	ForceAttemptHTTP2 bool
 
-	// TLSClientFactory is an ooni/oohttp extension. If this field is not
+	// TLSClientFactory is an jsnjack/oohttp extension. If this field is not
 	// nil, we'll use it. Otherwise we'll default to using the
 	// oohttp.TLSClientFactory global factory. (But, if you set the
 	// DialTLSContext function, you'll completely bypass this

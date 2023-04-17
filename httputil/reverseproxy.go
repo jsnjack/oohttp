@@ -13,14 +13,14 @@ import (
 	"log"
 	"mime"
 	"net"
+	"net/http"
 	"net/textproto"
 	"net/url"
 	"strings"
 	"sync"
 	"time"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/jsnjack/oohttp/internal/ascii"
 	"golang.org/x/net/http/httpguts"
 )
 

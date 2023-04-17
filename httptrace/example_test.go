@@ -7,9 +7,9 @@ package httptrace_test
 import (
 	"fmt"
 	"log"
+	"net/http"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptrace"
+	"github.com/jsnjack/oohttp/httptrace"
 )
 
 func Example() {

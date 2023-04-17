@@ -1,4 +1,4 @@
-module github.com/ooni/oohttp/example
+module github.com/jsnjack/oohttp/example
 
 go 1.18
 
@@ -8,7 +8,7 @@ require (
 	github.com/dreadl0ck/tlsx v1.0.1-google-gopacket
 	github.com/google/go-cmp v0.5.9
 	github.com/google/martian/v3 v3.3.2
-	github.com/ooni/oohttp v0.4.0
+	github.com/jsnjack/oohttp v0.4.0
 	github.com/refraction-networking/utls v1.2.0
 	golang.org/x/net v0.5.0
 )

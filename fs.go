@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ooni/oohttp/internal/safefilepath"
+	"github.com/jsnjack/oohttp/internal/safefilepath"
 )
 
 // A Dir implements FileSystem using the native file system restricted to a

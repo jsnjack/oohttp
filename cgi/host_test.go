@@ -12,6 +12,7 @@ import (
 	"fmt"
 	"io"
 	"net"
+	"net/http"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -22,8 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
+	"github.com/jsnjack/oohttp/httptest"
 )
 
 func newRequest(httpreq string) *http.Request {

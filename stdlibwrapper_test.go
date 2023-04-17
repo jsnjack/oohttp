@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	oohttp "github.com/ooni/oohttp"
+	oohttp "github.com/jsnjack/oohttp"
 )
 
 func TestStdlibWrapper(t *testing.T) {

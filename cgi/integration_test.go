@@ -12,12 +12,12 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"net/http"
 	"os"
 	"testing"
 	"time"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
+	"github.com/jsnjack/oohttp/httptest"
 )
 
 type customWriterRecorder struct {

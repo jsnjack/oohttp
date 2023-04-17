@@ -14,6 +14,7 @@ import (
 	"fmt"
 	"io"
 	"log"
+	"net/http"
 	"net/url"
 	"os"
 	"reflect"
@@ -24,9 +25,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/jsnjack/oohttp/httptest"
+	"github.com/jsnjack/oohttp/internal/ascii"
 )
 
 const fakeHopHeader = "X-Fake-Hop-Header-For-Test"

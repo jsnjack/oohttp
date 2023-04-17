@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	. "github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/httptest"
+	. "github.com/jsnjack/oohttp"
+	"github.com/jsnjack/oohttp/httptest"
 )
 
 func TestQuery(t *testing.T) {

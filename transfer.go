@@ -18,9 +18,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ooni/oohttp/httptrace"
-	"github.com/ooni/oohttp/internal"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/jsnjack/oohttp/httptrace"
+	"github.com/jsnjack/oohttp/internal"
+	"github.com/jsnjack/oohttp/internal/ascii"
 	"golang.org/x/net/http/httpguts"
 )
 

@@ -1,4 +1,4 @@
-module github.com/ooni/oohttp
+module github.com/jsnjack/oohttp
 
 go 1.18
 

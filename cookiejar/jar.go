@@ -9,14 +9,14 @@ import (
 	"errors"
 	"fmt"
 	"net"
+	"net/http"
 	"net/url"
 	"sort"
 	"strings"
 	"sync"
 	"time"
 
-	"github.com/ooni/oohttp"
-	"github.com/ooni/oohttp/internal/ascii"
+	"github.com/jsnjack/oohttp/internal/ascii"
 )
 
 // PublicSuffixList provides the public suffix of a domain. For example:
