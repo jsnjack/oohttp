@@ -1741,6 +1741,7 @@ func (cm *connectMethod) key() connectMethodKey {
 			targetAddr = ""
 		}
 	}
+	fmt.Println("proxyStr:", proxyStr, "scheme:", cm.targetScheme, "addr:", targetAddr, "onlyH1:", cm.onlyH1)
 	return connectMethodKey{
 		proxy:  proxyStr,
 		scheme: cm.targetScheme,
