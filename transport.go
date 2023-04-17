@@ -1737,7 +1737,7 @@ func (cm *connectMethod) key() connectMethodKey {
 	targetAddr := cm.targetAddr
 	if cm.proxyURL != nil {
 		proxyStr = cm.proxyURL.String()
-		if (cm.proxyURL.Scheme == "http" || cm.proxyURL.Scheme == "https") && cm.targetScheme == "http" {
+		if cm.proxyURL.Scheme == "http" || cm.proxyURL.Scheme == "https" {
 			targetAddr = ""
 		}
 	}
