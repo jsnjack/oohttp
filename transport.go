@@ -839,6 +839,7 @@ func (t *Transport) connectMethodForRequest(treq *transportRequest) (cm connectM
 	cm.targetScheme = treq.URL.Scheme
 	cm.targetAddr = canonicalAddr(treq.URL)
 	if t.Proxy != nil {
+		fmt.Println("t.Proxy != nil")
 		cm.proxyURL, err = t.Proxy(treq.Request)
 	}
 	cm.onlyH1 = treq.requiresHTTP1()
